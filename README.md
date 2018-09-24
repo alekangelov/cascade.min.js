@@ -8,7 +8,8 @@ Add the minified JS file so it works across all browsers. Make your css animatio
 `<script src="cascade.min.js"></script>`
 
 ### Step 2:
-` <style>
+```
+<style>
         .div {
             --margin: 100px;
             --finalMargin: 40px;
@@ -26,12 +27,15 @@ Add the minified JS file so it works across all browsers. Make your css animatio
                 opacity: 1;
             }
         }
-</style>`
+</style>
+```
 
 ### Step 3:
-`<script>
+```
+<script>
     let cascaded = document.querySelectorAll('.div');
     let obj = new Cascade(cascaded,0.1).cascade();
-</script>`
+</script>
+```
 
 check it out at [cascade.alekangelov.com](http://cascade.alekangelov.com)
